@@ -19,57 +19,81 @@ h1 {
     background-color: #C1D9F8;
     height: 60px;
     padding: 0 20px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1.5px solid #000;
 }
-  
-/* Styles for the logo */
+
 .logo img {
+    width: 40px;
     height: 40px;
-    width: auto;
 }
   
-/* Styles for the links */
-.links a {
-    margin: 0 10px;
+.links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.links li {
+    margin-left: 20px;
+}
+
+.links li a {
     text-decoration: none;
     color: #333;
+    transition: color 0.3s; /* Added transition property for smooth color change */
 }
   
-/* Styles for the register button */
-.register-btn {
-    display: inline-block;
-    padding: 10px 20px;
+.links li a:hover {
+    color: #fff; /* Change color to white on hover */
+}
+
+.register-button {
+    margin-left: auto;
+}
+
+.register-button a {
+    padding: 8px 16px;
     background-color: #0B549E;
     color: #fff;
     text-decoration: none;
-    border: 2px solid #333;
-    border-radius: 0;
 }
 
-.openingStatement {
-    padding-top: 1rem;
-    padding-left: 1rem;
-    color: #0B549E;
-    width: 30%;
+/* Burger Menu Styles */
+.menu-icon {
+    display: none; /* Hide the menu icon by default */
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
 }
   
-/* Responsive styles */
-@media only screen and (max-width: 600px) {
-    /* Stack the elements vertically */
-    .navbar {
-      flex-direction: column;
-      height: auto;
-      padding: 20px;
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .links {
+      display: none; /* Hide the links by default */
     }
   
-    /* Add margin to the logo */
-    .logo {
-      margin-bottom: 10px;
+    .menu-icon {
+      display: inline-block; /* Show the menu icon */
     }
-  
-    /* Center align the register button */
-    .register {
-      text-align: center;
-      margin-top: 10px;
+
+    #menu-toggle:checked + .menu-icon span {
+        background-color: #fff; /* Change line color when the menu icon is checked */
+    }
+
+    #menu-toggle:checked + .menu-icon + .links {
+        display: flex; /* Show the links when the menu icon is checked */
+        flex-direction: column;
+        background-color: #C1D9F8;
+        padding: 10px;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+    }
+
+    #menu-toggle:checked + .menu-icon + .links li {
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 }
