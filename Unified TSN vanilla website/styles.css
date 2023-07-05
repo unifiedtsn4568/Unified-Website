@@ -4,11 +4,12 @@
     padding: 0;
 
     /* Needs to be changed to proper font! */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
-h1 {
-    font-weight: 900;
+h1, p, label {
+    color: #0B549E;
+    line-height: 1.5;
 }
 
 /* Styles for the navbar */
@@ -19,7 +20,7 @@ h1 {
     background-color: #C1D9F8;
     height: 60px;
     padding: 0 20px;
-    border-bottom: 1.5px solid #000;
+    border-bottom: 1px solid #000;
 }
 
 .logo img {
@@ -66,7 +67,122 @@ h1 {
     cursor: pointer;
     margin-left: 10px;
 }
+
+.contactContainer {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
   
+.contactContainer h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contactContainer p {
+    font-size: 16px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.contactContainer form label {
+    font-size: 13px;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-container a {
+    color: #0B549E;
+}
+  
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #0B549E;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+    flex-shrink: 0;
+}
+  
+.checkbox-container input[type="checkbox"]:checked {
+    border-color: #3498db;
+}
+  
+.checkbox-container input[type="checkbox"]:focus {
+    border-color: #2980b9;
+}
+  
+.checkbox-container label {
+    margin-top: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #0B549E;
+}
+
+form input[type="submit"] {
+    background-color: #0B549E;
+    font-weight: 300;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}  
+
+form input[type="submit"]:hover {
+    background-color: #0E6BC7;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+}
+  
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+  
+.contact-item i {
+    color: #0B549E;
+    font-size: 24px;
+    margin-right: 10px;
+}
+  
+.contact-item h3 {
+    color: #0B549E;
+    margin: 0;
+}
+  
+.contact-item a {
+    display: flex;
+    align-items: center;
+    color: #0B549E;
+}
+
 /* Media Query for Responsive Design */
 @media (max-width: 768px) {
     .links {

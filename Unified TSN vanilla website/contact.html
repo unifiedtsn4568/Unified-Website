@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnifiedTSN</title>
+    <link rel="icon" type="image/x-icon" href="./img/LOGOunified.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <a href="./index.html"><img src="./img/LOGOunified.png" alt="Logo"></a>
+        </div>
+        <input style="display: none;" type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="links">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">App users</a></li>
+          <li><a href="#">Key features</a></li>
+          <li><a href="#">Subscriptions</a></li>
+          <li><a href="./contact.html">Contact us</a></li>
+        </ul>
+        <div class="register-button">
+          <a href="#">Pre-Register</a>
+        </div>
+    </nav>
+
+    <br><br>
+    
+    <div class="contactContainer">
+        <h1>Contact us</h1>
+        <p>Any questions, want to advertise with us? Or just say Hello! We want to hear from you!</p>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="enquiry">Enquiry</label>
+          <select id="enquiry" name="enquiry" required>
+            <option value="" disabled selected></option>
+            <option value="General">General Inquiry</option>
+            <option value="Support">Technical Support</option>
+            <option value="Sales">Sales</option>
+          </select>          
+    
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <div class="checkbox-container">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the <a href="#">Terms</a></label>
+          </div>
+    
+          <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <br><br>
+    <br><br>
+
+    <div class="contact-info">
+
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <a style="margin-left: 10px;" href="mailto:Management@unifiedtsn.com">Management@unifiedtsn.com</a>
+        </div>
+        <br>
+
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <h3>Phone</h3>
+          <a style="margin-left: 10px;" href="tel:+447853210636">+44 (0) 7853210636</a>
+        </div>
+        <br>
+
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Office</h3>
+          <a style="margin-left: 10px;" href="https://goo.gl/maps/4NKZ2BgJa7n55BXYA">Regus 4th Floor, Centenary House, 1 Centenary Way, M50 1RF</a>
+        </div>
+    </div>      
+
+</body>
+</html>
