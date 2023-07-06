@@ -227,49 +227,49 @@ form input[type="submit"]:hover {
     box-sizing: border-box;
 }
   
-  .header {
+.header {
     text-align: left;
     margin-bottom: 25px;
-  }
+}
   
-  .header h1 {
+.header h1 {
     font-size: 40px;
-  }
+}
   
-  .divider {
+.divider {
     border-bottom: 1px solid #000000;
     margin-bottom: 25px;
-  }
+}
   
-  .features {
+.features {
     list-style-type: none;
     padding: 0;
     margin: 0;
-  }
+}
   
-  .features li {
+.features li {
     color: #0B549E;
     margin-bottom: 15px;
-  }
+}
   
-  .features li i {
+.features li i {
     margin-right: 15px;
     color: #0B549E;
-  }
+}
 
-  .cta-button {
+.cta-button {
     text-align: center;
-  }
+}
   
-  .get-started-button {
+.get-started-button {
+    border: solid 1px #000;
     display: inline-block;
     padding: 13px 60px;
     background-color: #0B549E;
     color: #ffffff;
     text-decoration: none;
     margin-top: auto;
-  }
-  
+}  
 
 /* Media Query for Responsive Design */
 @media (max-width: 768px) {
