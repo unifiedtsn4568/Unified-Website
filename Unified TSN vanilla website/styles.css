@@ -155,32 +155,38 @@ form input[type="submit"]:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     margin-top: 20px;
     text-align: center;
 }
   
 .contact-item {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     margin-bottom: 10px;
 }
   
 .contact-item i {
     color: #0B549E;
-    font-size: 24px;
-    margin-right: 10px;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
   
-.contact-item h3 {
+.contact-item div {
+    text-align: center;
+}
+  
+.contact-item h2 {
+    margin-bottom: 10px;
     color: #0B549E;
-    margin: 0;
 }
   
 .contact-item a {
-    display: flex;
-    align-items: center;
+    font-weight: lighter;
     color: #0B549E;
+}
+  
+.contact-item a:hover {
+    color: #3498db;
 }
 
 /* Media Query for Responsive Design */
