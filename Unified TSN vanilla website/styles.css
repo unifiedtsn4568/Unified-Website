@@ -5,11 +5,11 @@
 
     /* Needs to be changed to proper font! */
     font-family: 'Inter', sans-serif;
+    line-height: 1.5;
 }
 
-h1, p, label {
+h1, h3, h5, p, label {
     color: #0B549E;
-    line-height: 1.5;
 }
 
 /* Styles for the navbar */
@@ -40,6 +40,7 @@ h1, p, label {
 }
 
 .links li a {
+    font-size: 15px;
     text-decoration: none;
     color: #333;
     transition: color 0.3s; /* Added transition property for smooth color change */
@@ -54,7 +55,9 @@ h1, p, label {
 }
 
 .register-button a {
-    padding: 8px 16px;
+    border: solid 1px #000;
+    font-size: 15px;
+    padding: 12px 15px;
     background-color: #0B549E;
     color: #fff;
     text-decoration: none;
@@ -142,7 +145,7 @@ form input[type="submit"] {
     font-weight: 300;
     color: white;
     padding: 15px 20px;
-    border: none;
+    border: solid 1px #000;
     cursor: pointer;
     margin-top: 10px;
 }  
@@ -189,6 +192,85 @@ form input[type="submit"]:hover {
     color: #3498db;
 }
 
+.subscriptionsHead {
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+
+.subscriptionsHead h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.subscriptionsHead h5 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.subscriptionContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.subscription-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 25px;
+    background-color: #ffffff;
+    border: 1px solid #0B549E;
+    padding: 20px;
+    width: 400px; /* Adjust the width as needed */
+    margin-right: 20px; /* Adjust the margin as needed */
+    box-sizing: border-box;
+}
+  
+  .header {
+    text-align: left;
+    margin-bottom: 25px;
+  }
+  
+  .header h1 {
+    font-size: 40px;
+  }
+  
+  .divider {
+    border-bottom: 1px solid #000000;
+    margin-bottom: 25px;
+  }
+  
+  .features {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .features li {
+    color: #0B549E;
+    margin-bottom: 15px;
+  }
+  
+  .features li i {
+    margin-right: 15px;
+    color: #0B549E;
+  }
+
+  .cta-button {
+    text-align: center;
+  }
+  
+  .get-started-button {
+    display: inline-block;
+    padding: 13px 60px;
+    background-color: #0B549E;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: auto;
+  }
+  
+
 /* Media Query for Responsive Design */
 @media (max-width: 768px) {
     .links {
@@ -217,5 +299,9 @@ form input[type="submit"]:hover {
     #menu-toggle:checked + .menu-icon + .links li {
         margin-right: 0;
         margin-bottom: 10px;
+    }
+
+    .subscriptionsHead {
+        margin-left: 10px;
     }
 }
