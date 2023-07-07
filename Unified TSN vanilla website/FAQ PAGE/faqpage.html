@@ -1,33 +1,15 @@
 <!DOCTYPE html>
 <html lang="english">
   <head>
-    <title>FAQs - exported project</title>
+    
+    <title>FAQs</title>
+    <link rel="icon" type="image/x-icon" href="./img/LOGOunified.ico">
     <meta property="og:title" content="FAQs - exported project" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
 
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
-
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
-
-      }
-    </style>
+ 
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
@@ -47,42 +29,31 @@
   </head>
   <body>
     <div>
-      <link href="./f-qs.css" rel="stylesheet" />
+      <link href="./faqpage.css" rel="stylesheet" />
 
       <div class="f-qs-container">
         <div class="f-qs-f-qs">
           <div class="f-qs-navbar">
-            <div class="f-qs-column">
-              <img alt="image52671" src="" class="f-qs-image5" />
-              <div class="f-qs-column1">
-                <span class="f-qs-text TextRegularNormal">
-                  <span>About us</span>
-                </span>
-                <span class="f-qs-text02 TextRegularNormal">
-                  <span>App users</span>
-                </span>
-                <span class="f-qs-text04 TextRegularNormal">
-                  <span>Key features</span>
-                </span>
-                <span class="f-qs-text06 TextRegularNormal">
-                  <span>Subscriptions</span>
-                </span>
-                <span class="f-qs-text08 TextRegularNormal">
-                  <span>Contact us</span>
-                </span>
-              </div>
+           <nav class="navbar">
+        <div class="logo">
+          <a href="../index.html"><img src="../img/LOGOunified.png" alt="Logo"></a>
+        </div>
+        <input style="display: none;" type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="links">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">App users</a></li>
+          <li><a href="#">Key features</a></li>
+          <li><a href="../subscriptions.html">Subscriptions</a></li>
+          <li><a href="../contact.html">Contact us</a></li>
+        </ul>
+        <div class="register-button">
+          <a href="#">Pre-Register</a>
+        </div>
+    </nav>
             </div>
             <div class="f-qs-column2">
-              <button class="f-qs-button">
-                <span class="f-qs-text10 TextRegularNormal">
-                  <span>Win an iPad!</span>
-                </span>
-              </button>
-              <button class="f-qs-button1">
-                <span class="f-qs-text12 TextRegularNormal">
-                  <span>Pre-Register</span>
-                </span>
-              </button>
+              
             </div>
           </div>
           <div class="f-qs-faq9">
@@ -91,7 +62,7 @@
             </div>
             <div class="f-qs-content">
               <div class="f-qs-row">
-                <img alt="Divider2671" src="" class="f-qs-divider" />
+                <hr>
                 <div class="f-qs-content1">
                   <span class="f-qs-text16 TextMediumBold">
                     <span>What is Unified TSN?</span>
