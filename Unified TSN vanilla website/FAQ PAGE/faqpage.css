@@ -12,6 +12,9 @@ h1, h3, h5, p, label  {
   color: #0B549E;
 }
 
+a{
+  text-decoration: none;
+}
 .f-qs-container {
   width: 100%;
   display: flex;
@@ -498,12 +501,18 @@ line-height: 130%;
   border-style: solid;
   border-width: 1px;
   justify-content: center;
+  text-decoration: none;
 }
 .f-qs-text42 {
-  color: rgba(11, 84, 158, 1);
-  height: auto;
-  text-align: left;
-  line-height: 150%;
+  color: #0B549E;
+
+/* Text/Regular/Normal */
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+
 }
 .f-qs-footer1 {
   gap: 80px;
