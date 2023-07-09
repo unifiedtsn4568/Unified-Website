@@ -506,6 +506,11 @@ line-height: 130%;
   justify-content: center;
   text-decoration: none;
 }
+
+.f-qs-button2:hover{
+  scale: 105%;
+  background-color: rgb(185, 185, 185);
+}
 .f-qs-text42 {
   color: #0B549E;
 
