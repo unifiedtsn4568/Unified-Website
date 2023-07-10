@@ -43,7 +43,7 @@ h1, h3, h5, p, label {
     font-size: 15px;
     text-decoration: none;
     color: #333;
-    transition: color 0.3s; /* Added transition property for smooth color change */
+    transition: color 0.3s;
 }
   
 .links li a:hover {
@@ -61,6 +61,11 @@ h1, h3, h5, p, label {
     background-color: #0B549E;
     color: #fff;
     text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.register-button a:hover {
+    background-color: #0E6BC7;
 }
 
 /* Burger Menu Styles */
@@ -71,6 +76,147 @@ h1, h3, h5, p, label {
     margin-left: 10px;
 }
 
+/* Home page styles */
+.headingContainer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.home-container {
+    max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+  
+.header h1 {
+    font-size: 2.2em;
+}
+  
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+  
+.content-left,
+.content-right {
+    flex-basis: 50%;
+}
+  
+.content-left p,
+.content-right img {
+    width: 100%;
+    display: block;
+}
+
+.testimonials-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 30px;
+    margin-bottom: 80px;
+}
+  
+
+.testimonial-box {
+    height: max-content;
+    flex-basis: calc(33% - 10px);
+    margin-bottom: 40px;
+    padding: 30px;
+    border: 1px solid #0B549E;
+    box-sizing: border-box;
+}
+  
+.testimonial {
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+  
+.company {
+    display: flex;
+    align-items: center;
+}
+  
+.company img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+  
+.company-info h3,
+.company-info p {
+    margin: 0;
+}
+
+.faq-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+  
+.faq-box {
+    cursor: pointer;
+    color: #0B549E;
+    border: solid 1px #0B549E;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+}
+  
+.question {
+    font-weight: bold;
+    margin-right: auto;
+}
+  
+.plus-icon {
+    font-size: 20px;
+    margin-left: 10px;
+}
+  
+.answer {
+    color: #0B549E;
+    overflow: hidden;
+    max-height: 0;
+    width: 80%;
+    max-width: 700px;
+    transition: max-height 0.3s ease-out;
+    margin-bottom: 10px;
+}
+
+.still-have-questions {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+  
+.section-heading {
+    margin-bottom: 35px;
+}
+  
+.contact-button {
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #0B549E;
+    background-color: #fff;
+    border: solid 1px #0B549E;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+  
+.contact-button:hover {
+    background-color: #d0d0d0;
+    transform: scale(1.1);
+}  
+
+/* Contact us page styles */
 .contactContainer {
     max-width: 500px;
     margin: 0 auto;
@@ -148,24 +294,26 @@ form input[type="submit"] {
     border: solid 1px #000;
     cursor: pointer;
     margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }  
 
 form input[type="submit"]:hover {
     background-color: #0E6BC7;
+    transform: scale(1.1);
 }
 
 .contact-info {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+    justify-content: center;
     text-align: center;
+    margin-top: 20px;
 }
   
 .contact-item {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-right: 20px;
 }
   
 .contact-item i {
@@ -184,14 +332,17 @@ form input[type="submit"]:hover {
 }
   
 .contact-item a {
+    display: flex;
+    align-items: center;
     font-weight: lighter;
     color: #0B549E;
 }
   
 .contact-item a:hover {
-    color: #3498db;
+    color: #0E6BC7;
 }
 
+/* Subscriptions page styles */
 .subscriptionsHead {
     margin-left: 25px;
     margin-bottom: 50px;
@@ -269,9 +420,15 @@ form input[type="submit"]:hover {
     color: #ffffff;
     text-decoration: none;
     margin-top: auto;
-}  
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
-/* Media Query for Responsive Design */
+.get-started-button:hover {
+    background-color: #0E6BC7;
+    transform: scale(1.1);
+}
+
+/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .links {
       display: none; /* Hide the links by default */
@@ -301,7 +458,42 @@ form input[type="submit"]:hover {
         margin-bottom: 10px;
     }
 
+    .headingContainer {
+        margin: 0 10px;
+    }
+
+    .content-section {
+        flex-direction: column;
+    }
+    
+    .content-left,
+    .content-right {
+        margin: 20px 20px;
+    }
+
+    .testimonials-section {
+        justify-content: center;
+    }
+      
+    .testimonial-box {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-item {
+        margin-right: 0;
+    }
+
     .subscriptionsHead {
         margin-left: 10px;
+    }
+
+    .subscription-box {
+        margin: 20px;
     }
 }
