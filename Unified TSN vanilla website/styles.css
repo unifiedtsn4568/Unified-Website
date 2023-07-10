@@ -8,7 +8,7 @@
     line-height: 1.5;
 }
 
-h1, h3, h5, p, label {
+h1, h3, h4, h5, p, label {
     color: #0B549E;
 }
 
@@ -112,42 +112,74 @@ h1, h3, h5, p, label {
 }
 
 .testimonials-section {
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 30px;
-    margin-bottom: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
 }
   
-
 .testimonial-box {
-    height: max-content;
-    flex-basis: calc(33% - 10px);
-    margin-bottom: 40px;
-    padding: 30px;
-    border: 1px solid #0B549E;
-    box-sizing: border-box;
+    background-color: #fff;
+    border: solid 1px #0B549E;
+    max-width: 800px; /* Adjust the maximum width of the testimonial boxes as needed */
+    padding: 35px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
   
-.testimonial {
-    margin-bottom: 10px;
-    word-wrap: break-word;
+.testimonial-content {
+    margin-bottom: 20px;
+}
+
+.testimonial-info {
+    margin-top: 20px;
 }
   
-.company {
+.testimonial-name, .testimonial-occupation {
+    margin-top: 5px;
+    font-style: italic;
+}
+  
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s;
 }
   
-.company img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: #d0d0d0;
 }
   
-.company-info h3,
-.company-info p {
-    margin: 0;
+.swiper-button-next::after, .swiper-button-prev::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #888;
+    border-right: 2px solid #888;
+    transform: rotate(45deg);
+}
+  
+.swiper-button-prev::after {
+    transform: rotate(-135deg);
+}
+  
+.swiper-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .faq-section {
