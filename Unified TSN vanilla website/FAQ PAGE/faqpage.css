@@ -15,6 +15,13 @@ h1, h3, h5, p, label  {
 a{
   text-decoration: none;
   
+  
+}
+
+a:visited{
+  color: #0B549E;
+
+
 }
 .f-qs-container {
   width: 100%;
@@ -494,6 +501,7 @@ font-weight: 700;
 line-height: 130%;
 }
 .f-qs-button2 {
+   text-align:center;
   gap: 8px;
   background-color: white;
   display: flex;
@@ -505,11 +513,40 @@ line-height: 130%;
   border-width: 1px;
   justify-content: center;
   text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
+.preregisterbtn{
+  border: solid 1px #000;
+  font-size: 15px;
+  padding: 12px 15px;
+  background-color: #0B549E;
+  color: #fff;
+  text-decoration: none;
+}
+.preregistertext{
+  color: #ffffff;
+  
+}
+
+
+
+.contactustext{
+  color: #0B549E;
+
+/* Text/Regular/Normal */
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+}
+
+  
 .f-qs-button2:hover{
-  scale: 105%;
-  background-color: rgb(185, 185, 185);
+  scale:110%;
+  background-color: rgb(245, 245, 245);
 }
 .f-qs-text42 {
   color: #0B549E;
@@ -635,10 +672,10 @@ margin-bottom: 5rem;
   text-decoration: UNDERLINE;
 }
 .f-qs-links {
-  gap: 40px;
   display: flex;
-  flex-grow: 1;
   align-items: flex-start;
+  gap: 40px;
+  flex: 1 0 0;  
 }
 .f-qs-column3 {
   gap: 16px;
@@ -651,11 +688,17 @@ margin-bottom: 5rem;
   flex-direction: column;
 }
 .f-qs-text52 {
-  color: rgba(11, 84, 158, 1);
-  height: auto;
-  align-self: stretch;
-  text-align: left;
-  line-height: 150%;
+  display: flex;
+flex-direction: column;
+align-self: stretch;
+color: #0B549E;
+
+/* Text/Regular/Semi Bold */
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%;
 }
 .f-qs-footer-links {
   display: flex;
@@ -699,12 +742,21 @@ margin-bottom: 5rem;
   flex-shrink: 0;
 }
 .f-qs-text58 {
-  color: rgba(11, 84, 158, 1);
-  height: auto;
-  flex-grow: 1;
-  text-align: left;
-  line-height: 150%;
+  display: flex;
+flex-direction: column;
+flex: 1 0 0;
+color: #0B549E;
+
+/* Text/Small/Normal */
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+text-decoration: none;
 }
+
+
 .f-qs-link03 {
   display: flex;
   padding: 8px 0;
@@ -713,11 +765,18 @@ margin-bottom: 5rem;
   flex-shrink: 0;
 }
 .f-qs-text60 {
-  color: rgba(11, 84, 158, 1);
-  height: auto;
-  flex-grow: 1;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  color: #0B549E;
+  
+  /* Text/Small/Normal */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 150%;
+  text-decoration: none;
 }
 .f-qs-link04 {
   display: flex;
@@ -751,11 +810,17 @@ margin-bottom: 5rem;
   flex-direction: column;
 }
 .f-qs-text64 {
-  color: rgba(11, 84, 158, 1);
-  height: auto;
+  display: flex;
+  flex-direction: column;
   align-self: stretch;
-  text-align: left;
-  line-height: 150%;
+  color: #0B549E;
+
+/* Text/Regular/Semi Bold */
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%;
 }
 .f-qs-footer-links1 {
   display: flex;
@@ -785,11 +850,18 @@ margin-bottom: 5rem;
   flex-shrink: 0;
 }
 .f-qs-text68 {
-  color: rgba(11, 84, 158, 1);
-  height: auto;
-  flex-grow: 1;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  color: #0B549E;
+  
+  /* Text/Small/Normal */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 150%;
+  text-decoration: none;
 }
 .f-qs-link08 {
   display: flex;
@@ -815,11 +887,17 @@ margin-bottom: 5rem;
   flex-direction: column;
 }
 .f-qs-text72 {
-  color: rgba(11, 84, 158, 1);
-  height: auto;
+  display: flex;
+  flex-direction: column;
   align-self: stretch;
-  text-align: left;
-  line-height: 150%;
+  color: #0B549E;
+
+/* Text/Regular/Semi Bold */
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%;
 }
 .f-qs-social-links {
   display: flex;
