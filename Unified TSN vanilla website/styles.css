@@ -89,7 +89,39 @@ h1, h3, h4, h5, p, label {
     margin: 0 auto;
     margin-bottom: 80px;
 }
+
+.centered-row {
+    display: flex;
+    justify-content: center;
+}
   
+.keywords-bar {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 600px; /* Adjust the width as desired */
+    margin-bottom: 50px;
+}
+  
+.keywords-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+  
+.keywords-list li {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 0 10px;
+    font-size: 14px;
+    color: #0B549E;
+}
+  
+.keywords-list li i {
+    margin-right: 5px;
+}
+
 .header h1 {
     font-size: 2.2em;
 }
