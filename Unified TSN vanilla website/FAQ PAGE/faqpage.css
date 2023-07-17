@@ -524,12 +524,17 @@ line-height: 130%;
   background-color: #0B549E;
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 .preregistertext{
   color: #ffffff;
   
 }
-
+.preregisterbtn:hover{
+  scale:105%;
+  background-color: #1070cf;
+}
 
 
 .contactustext{
@@ -543,9 +548,10 @@ font-weight: 400;
 line-height: 150%;
 }
 
+
   
 .f-qs-button2:hover{
-  scale:110%;
+  scale:105%;
   background-color: rgb(245, 245, 245);
 }
 .f-qs-text42 {
