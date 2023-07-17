@@ -884,13 +884,11 @@ line-height: 150%;
   line-height: 150%;
 }
 .f-qs-column5 {
-  gap: 16px;
-  width: 201.3333282470703px;
   display: flex;
-  flex-grow: 1;
-  align-items: flex-start;
-  flex-shrink: 0;
-  flex-direction: column;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+flex: 1 0 0;
 }
 .f-qs-text72 {
   display: flex;
@@ -915,6 +913,23 @@ line-height: 150%;
   width: 201px;
   height: 40px;
   align-self: stretch;
+  display: flex;
+padding: 8px 0px;
+align-items: center;
+gap: 12px;
+align-self: stretch;
+}
+
+.icons{
+  width: 24px;
+height: 24px;
+}
+.footericons{
+  display: flex;
+padding: 8px 0px;
+align-items: center;
+gap: 12px;
+align-self: stretch;
 }
 .f-qs-link10 {
   width: 201px;
