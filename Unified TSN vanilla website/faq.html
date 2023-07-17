@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subscriptions</title>
+    <title>FAQs</title>
     <link rel="icon" type="image/x-icon" href="./img/LOGOunified.ico">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="app.js" type="text/javascript"></script>
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">
           <a href="./index.html"><img src="./img/LOGOunified.png" alt="Logo"></a>
         </div>
-        <input style="display: none;" type="checkbox" id="menu-toggle">
+        <input style="display: none;" type="checkbox" id="menu-toggle" class="menu-toggle">
         <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <ul class="links">
           <li><a href="#">About us</a></li>
@@ -28,71 +31,35 @@
         </div>
     </nav>
 
-    <br><br>
-
-    <div class="subscriptionsHead">
-        <h5>Pricing plans</h5>
-        <h1>Choose your own subscription!</h1>
-        <p>We offer a flexible experience when it comes to subscriptions to ensure that you don't have to pay for any features you don't need.</p>
+    <div class="faq-container">
+        <h2 class="faq-heading">FAQs</h2>
+        <div style="border-top: solid 1px #0B549E; margin-top: 20px; padding-top: 20px;" class="faq-page-section">
+          <h3 class="faq-question">What is Unified TSN?</h3>
+          <p class="faq-answer">Unified TSN is an iOS/Android social networking platform for university students to connect with other students and tutors. Unified TSN will also host a marketplace for all and only student-owned businesses.</p>
+        </div>
+        <div class="faq-page-section">
+          <h3 class="faq-question">When is Unified TSN going to be launched?</h3>
+          <p class="faq-answer">Our amazing development team will have the app ready for all students in time for the new academic year 2023/24. Can't wait? <a class="faq-register-link" href="https://tr.ee/NWQUiBzzvh" target="_blank">Pre-register here</a></p>
+        </div>
+        <div class="faq-page-section">
+          <h3 class="faq-question">Can I connect with students in other universities?</h3>
+          <p class="faq-answer">For sure! You can filter students by City, University or Course to find the exact people you are looking for!</p>
+        </div>
+        <div class="faq-page-section">
+            <h3 class="faq-question">Can I sell anything on the marketplace?</h3>
+            <p class="faq-answer">The marketplace exists to promote all businesses and side hustles started by university students. On the marketplace you can also open shop pages to sell your old clothes, books and other items. If it can be sold in a shop, you can sell it on Unified!</p>
+        </div>
+        <div class="faq-page-section">
+            <h3 class="faq-question">How do I connect with Tutors?</h3>
+            <p class="faq-answer">If you want to connect with tutors, you can via the subscription "Tutor Access". Through this subscription you can download resources (webinars, documents, power-points, links, videos) directly from any and all tutors' profiles.
+                <br><br>
+                You can also connect with all tutors on the app and ask them whatever questions are troubling you and award the tutors with points when they answer your queries.If you require hourly tutoring, you can discuss this with the tutors directly. We don't charge the tutors a commission so their prices can remain student friendly!</p>
+        </div>
     </div>
-
-    <div class="subscriptionContainer">
-        <div class="subscription-box">
-            <div class="header">
-                <h3>Freemium Plan</h3>
-                <h1>Free</h1>
-                <p>This is the basic plan every user is initially assigned.</p>
-            </div>
-            <div class="divider"></div>
-            <p style="margin-bottom: 20px;">Includes:</p>
-            <ul class="features">
-                <li><i class="fas fa-check"></i>Swipe through students daily</li>
-                <li><i class="fas fa-check"></i>Use City, Course and University filters</li>
-                <li><i class="fas fa-check"></i>Search for your friends & make groupchats</li>
-                <li><i class="fas fa-check"></i>Shop in student-owned businesses & stores</li>
-            </ul>
-            <div class="cta-button">
-                <a href="#" class="get-started-button">Register now</a>
-            </div>
-        </div>
-
-        <div style="background-image: linear-gradient(180deg, #F1D542, #fff);" class="subscription-box">
-            <div class="header">
-                <h3>Subscription Plan - Create Your Own!</h3>
-                <h1>£1+ /mo</h1>
-                <p>The price will depend on the features you choose to include.</p>
-            </div>
-            <div class="divider"></div>
-            <p style="margin-bottom: 20px;">Includes:</p>
-            <ul class="features">
-                <li><i class="fas fa-check"></i>Create business page - £6</li>
-                <li><i class="fas fa-check"></i>Tutor access - £6</li>
-                <li><i class="fas fa-check"></i>Unlimited Matches & Swipes - £3.50</li>
-                <li><i class="fas fa-check"></i>Remove Ads - £1.50</li>
-                <li><i class="fas fa-check"></i>Change Gender - £1</li>
-                <li><i class="fas fa-check"></i>Unified package (contains all)</li>
-            </ul>
-            <div class="cta-button">
-                <a href="#" class="get-started-button">Register now</a>
-            </div>
-        </div>
-
-        <div style="background-image: linear-gradient(180deg, #7d9ddf, #fff);" class="subscription-box">
-            <div class="header">
-                <h3>Extras</h3>
-                <h1>£0.50</h1>
-                <p>One-time purchases (repeatable)</p>
-            </div>
-            <div class="divider"></div>
-            <p style="margin-bottom: 20px;">Includes:</p>
-            <ul class="features">
-                <li><i class="fas fa-check"></i>Get Featured - Your business page will be in the get featured section for 24 hours (This is good if you're releasing a new product or doing a seasonal promotion)</li>
-                <li><i class="fas fa-check"></i>Messages - Send a message to someone you have not yet connected with</li>
-            </ul>
-            <div class="cta-button">
-                <a href="#" class="get-started-button">Register now</a>
-            </div>
-        </div>
+    
+    <div class="still-have-questions">
+        <h1 class="section-heading">Still have a question?</h1>
+        <a href="contact.html" class="contact-button">Contact us</a>
     </div>
 
     <footer class="footer">
@@ -146,6 +113,5 @@
             <a href="#">Cookie Settings</a>
         </div>                          
     </footer>
-
 </body>
 </html>

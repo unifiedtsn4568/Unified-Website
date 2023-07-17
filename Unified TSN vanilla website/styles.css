@@ -8,7 +8,7 @@
     line-height: 1.5;
 }
 
-h1, h3, h4, h5, p, label {
+h1, h2, h3, h4, h5, p, label {
     color: #0B549E;
 }
 
@@ -21,7 +21,10 @@ h1, h3, h4, h5, p, label {
     height: 60px;
     padding: 0 20px;
     border-bottom: 1px solid #000;
-}
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}  
 
 .logo img {
     width: 40px;
@@ -61,7 +64,7 @@ h1, h3, h4, h5, p, label {
     background-color: #0B549E;
     color: #fff;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease
 }
 
 .register-button a:hover {
@@ -76,6 +79,140 @@ h1, h3, h4, h5, p, label {
     margin-left: 10px;
 }
 
+/* Footer styles */
+.footer {
+    margin-top: 100px;
+    background-color: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .footer-left {
+    flex: 1;
+    margin-right: 300px;
+  }
+  
+  .footer-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-grow: 1;
+  }
+  
+  .footer-heading {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-description {
+    margin-bottom: 20px;
+  }
+  
+  .subscription-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .email-input {
+    width: 500px; /* Adjust the width as desired */
+    padding: 10px;
+    border: 1px solid #0B549E;
+    margin-right: 10px;
+    text-align: left;
+  }
+  
+  .join-button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #0B549E;
+    border: solid 1px #0B549E;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .join-button:hover {
+    background-color: #C1D9F8;
+    transform: scale(1.1);
+  }
+  
+  .footer-disclaimer {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+  }
+
+  .footer-section {
+    margin-right: 50px;
+    flex-basis: calc(33% - 50px); /* Set the width to one-third of the available space */
+  }
+
+  .footer-section:last-child {
+    margin-right: 0; /* Remove the margin for the last section */
+  }
+  
+  .footer-section .footer-heading {
+    margin-bottom: 30px; /* Add spacing under the heading */
+  }
+  
+  .footer-section .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section .footer-links li {
+    margin-bottom: 15px; /* Add spacing between the links */
+  }
+  
+  .footer-section .footer-links a {
+    font-size: 14px;
+    color: #0B549E; /* Change the color of the links */
+    text-decoration: none;
+    display: flex; /* Display icons and links in a row */
+    align-items: center; /* Vertically center icons and links */
+  }
+  
+  .footer-section .footer-links i {
+    font-size: 20px; /* Increase the font size of the icons */
+    color: #0B549E; /* Change the color of the icons */
+    margin-right: 8px; /* Add spacing between icons and links */
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-section .footer-links a:hover i {
+    text-decoration: none; /* Remove underline only for icons when hovering */
+  }
+
+  .blue-divider {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 0.5px solid #0B549E;
+  }   
+  
+  .footer-bottom {
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .footer-bottom a {
+    color: #0B549E;
+    margin-right: 10px;
+  }
+
+  .footer-bottom a:hover {
+    color: #C1D9F8;
+  } 
+  
+  
 /* Home page styles */
 .headingContainer {
     padding-top: 30px;
@@ -298,7 +435,6 @@ h1, h3, h4, h5, p, label {
 .still-have-questions {
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 100px;
 }
   
 .section-heading {
@@ -319,6 +455,45 @@ h1, h3, h4, h5, p, label {
 .contact-button:hover {
     background-color: #C1D9F8;
     transform: scale(1.1);
+}
+
+/* FAQ page styles */
+.faq-container {
+    margin: 20px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 60px;
+}
+  
+.faq-heading {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+  
+.faq-page-section {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #0B549E;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+  
+.faq-question {
+    font-size: 16px;
+    flex: 0 0 50%;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+}
+  
+.faq-answer {
+    font-size: 14px;
+    font-weight: lighter;
+    flex: 1;
+    text-align: left;
+    margin: 0;
 }  
 
 /* Contact us page styles */
@@ -381,7 +556,7 @@ h1, h3, h4, h5, p, label {
 }
 
 form input[type="text"],
-form input[type="email"],
+.contact-form-email,
 form textarea,
 form select {
     width: 100%;
@@ -390,7 +565,7 @@ form select {
     border: 1px solid #0B549E;
 }
 
-form input[type="submit"] {
+.contact-form-submit {
     background-color: #0B549E;
     color: white;
     padding: 15px 20px;
@@ -400,7 +575,7 @@ form input[type="submit"] {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }  
 
-form input[type="submit"]:hover {
+.contact-form-submit:hover {
     color: #3c3c3c;
     background-color: #C1D9F8;
     transform: scale(1.1);
@@ -544,22 +719,58 @@ form input[type="submit"]:hover {
 
     #menu-toggle:checked + .menu-icon span {
         background-color: #fff; /* Change line color when the menu icon is checked */
-    }
-
-    #menu-toggle:checked + .menu-icon + .links {
+      }
+      
+      #menu-toggle:checked + .menu-icon + .links {
         display: flex; /* Show the links when the menu icon is checked */
         flex-direction: column;
         background-color: #C1D9F8;
         padding: 10px;
         position: absolute;
-        top: 50px;
+        top: 0;
         left: 0;
         right: 0;
-    }
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+      
+      #menu-toggle:checked + .menu-icon + .links.show {
+        opacity: 1;
+        transform: scale(1);
+      }
 
-    #menu-toggle:checked + .menu-icon + .links li {
+      .footer-left {
+        flex-basis: 100%;
         margin-right: 0;
+        margin-bottom: 20px;
+      }
+    
+      .footer-right {
+        flex-basis: 100%;
+      }
+    
+      .footer-section {
+        flex-basis: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+    
+      .email-input {
+        width: 100%; /* Adjust the width to full width */
+      }
+         
+    .faq-page-section {
+        display: block;
+    }
+    
+    .faq-question {
         margin-bottom: 10px;
+    }
+    
+    .faq-answer {
+        margin-top: 10px;
     }
 
     .headingContainer {
