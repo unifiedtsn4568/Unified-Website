@@ -865,14 +865,10 @@ justify-content: center;
 align-items: center;
 gap: 24px;
 align-self: stretch;
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(11, 84, 158, 0.50) 0%, rgba(11, 84, 158, 0.50) 100%), url(./img/aboutpageimg.jpeg), lightgray 50% / cover no-repeat;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(11, 84, 158, 0.50) 0%, rgba(11, 84, 158, 0.50) 100%), url(./img/Aboutus/aboutpageimg.jpeg), lightgray 50% / cover no-repeat;
  background-position-y: center;
 }
-  .aboutusimg{
-    height: 342px;
-    width: 100dvw;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(11, 84, 158, 0.50) 0%, rgba(11, 84, 158, 0.50) 100%), lightgray 50% / cover no-repeat;
-  }
+ 
   .about-us-content {
     display: flex;
 width: 768px;
@@ -1022,41 +1018,40 @@ gap: 80px;
     flex-direction: column;
   }
   .about-us-text36 {
+    align-self: stretch;
     color: #0B549E;
 
-    /* Heading/H2 */
-    font-family: Roboto;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%; /* 57.6px */
+/* Heading/H2 */
+font-family: Roboto;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 57.6px */
   }
   .about-us-content06 {
-    gap: 48px;
     display: flex;
-    align-self: stretch;
-    align-items: flex-start;
-    flex-direction: column;
+flex-direction: column;
+align-items: flex-start;
+gap: 48px;
+align-self: stretch;
   }
   .about-us-content07 {
-    gap: 48px;
     display: flex;
-    align-self: stretch;
     align-items: flex-start;
-    flex-shrink: 0;
+    gap: 48px;
+    align-self: stretch;
   }
   .about-us-card {
-    gap: 24px;
-    width: 400px;
     display: flex;
-    align-items: flex-start;
-    flex-shrink: 0;
-    flex-direction: column;
+width: 600px;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
   }
   .about-us-placeholder-image {
     width: 80px;
-    height: 80px;
-    border-radius: 50px;
+height: 80px;
+border-radius: 50px;
   }
   .about-us-content08 {
     gap: 16px;
@@ -1068,26 +1063,32 @@ gap: 80px;
   .about-us-title {
     display: flex;
     align-self: stretch;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
   }
   .about-us-text38 {
-    color: rgba(11, 84, 158, 1);
-    height: auto;
-    align-self: stretch;
-    text-align: left;
-    line-height: 150%;
+    color: #0B549E;
+
+/* Text/Large/Semi Bold */
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; /* 30px */
   }
   .about-us-text40 {
-    color: rgba(11, 84, 158, 1);
-    height: auto;
-    align-self: stretch;
-    text-align: left;
-    line-height: 150%;
+    color: #0B549E;
+
+/* Text/Medium/Normal */
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 27px */
   }
   .about-us-card1 {
     gap: 24px;
-    width: 400px;
+    width: 600px;
     display: flex;
     align-items: flex-start;
     flex-shrink: 0;
@@ -1108,22 +1109,28 @@ gap: 80px;
   .about-us-title1 {
     display: flex;
     align-self: stretch;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
   }
   .about-us-text42 {
-    color: rgba(11, 84, 158, 1);
-    height: auto;
-    align-self: stretch;
-    text-align: left;
-    line-height: 150%;
+    color: #0B549E;
+
+    /* Text/Large/Semi Bold */
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
   }
   .about-us-text44 {
-    color: rgba(11, 84, 158, 1);
-    height: auto;
-    align-self: stretch;
-    text-align: left;
-    line-height: 150%;
+    color: #0B549E;
+
+/* Text/Medium/Normal */
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 27px */
   }
   .about-us-card2 {
     gap: 24px;
@@ -1137,6 +1144,7 @@ gap: 80px;
     width: 80px;
     height: 80px;
     border-radius: 50px;
+    
   }
   .about-us-content10 {
     gap: 16px;
@@ -1148,22 +1156,28 @@ gap: 80px;
   .about-us-title2 {
     display: flex;
     align-self: stretch;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
   }
   .about-us-text46 {
-    color: rgba(11, 84, 158, 1);
-    height: auto;
-    align-self: stretch;
-    text-align: left;
-    line-height: 150%;
+    color: #0B549E;
+
+    /* Text/Large/Semi Bold */
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
   }
   .about-us-text48 {
-    color: rgba(11, 84, 158, 1);
-    height: auto;
-    align-self: stretch;
-    text-align: left;
-    line-height: 150%;
+    color: #0B549E;
+
+    /* Text/Medium/Normal */
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
   }
   .about-us-content11 {
     gap: 40px;
