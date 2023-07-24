@@ -243,12 +243,6 @@ label {
     text-align: center;
 }
 
-.home-container {
-    max-width: 960px;
-    margin: 0 auto;
-    margin-bottom: 70px;
-}
-
 .main-cta {
     display: inline-block;
     padding: 12px 24px;
@@ -322,21 +316,78 @@ label {
     font-size: 2.2em;
 }
 
-.content-section {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 70px;
+.carousel-container {
+  max-width: 1200px;
+  margin: 90px auto;
 }
 
-.content-left,
-.content-right {
-    flex-basis: 50%;
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.content-left p,
-.content-right img {
-    width: 100%;
-    display: block;
+.card {
+  background-color: #C1D9F8;
+  padding: 50px;
+  margin: 20px;
+  max-width: 700px;
+  /* Set a max width for the cards to limit their size */
+  text-align: left;
+  display: flex; /* Display cards in a row */
+  flex-wrap: wrap; /* Allow cards to wrap to the next row on smaller screens */
+}
+
+.card-content {
+  flex: 1; /* Allow content to take up the remaining space */
+}
+
+.card-info {
+  color: #fff;
+}
+
+.arrows {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.prev-arrow,
+.next-arrow {
+  background-color: #C1D9F8;
+  color: white;
+  font-size: 20px;
+  padding: 10px 15px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.prev-arrow:hover,
+.next-arrow:hover {
+  background-color: #0B549E;
+  transform: scale(1.1);
+}
+
+/* Media query for desktop and tablet devices */
+@media screen and (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .card-content {
+    flex: 2; /* Adjust the flex value for content to balance with the images */
+  }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 767px) {
+  .card {
+    padding: 20px;
+    margin: 10px;
+    max-width: 90%;
+  }
 }
 
 .testimonials-section {
@@ -1608,11 +1659,6 @@ line-height: 150%; /* 27px */
 
     .content-section {
         flex-direction: column;
-    }
-
-    .content-left,
-    .content-right {
-        margin: 20px 20px;
     }
 
     .testimonials-section {
