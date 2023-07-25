@@ -948,3 +948,134 @@ label {
         margin: 20px;
     }
 }
+
+/* Key features page styles */
+
+  /* Main container */
+  .key-features-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  /* Key features heading and sub description */
+  .key-features-Heading-and-Description {
+    gap: 80px;
+    width: 1440px;
+    height: 302px;
+    display: flex;
+    padding: 112px 64px;
+    align-items: center;
+    flex-shrink: 0;
+    flex-direction: column;
+    background-color: var(--dl-color-default-white);
+  }
+  
+  .key-features-content {
+    gap: 24px;
+    width: 768px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  
+  /* All Headings & Key Features Description*/
+  .key-features-heading,
+  .key-features-description,
+  .key-features-swipeAndMatchHeading,
+  .key-features-PSBHeading,
+  .key-features-marketplace,
+  .key-features-businessHeading,
+  .key-features-tutorsChatHeading,
+  .key-features-tutorResources {
+    color: rgba(11, 84, 158, 1);
+    height: auto;
+    font-size: 24px;
+    align-self: stretch;
+    font-style: Bold;
+    text-align: center;
+    font-weight: 700;
+    line-height: 150%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  
+  .key-features-description,
+  .key-features-SWDescription,
+  .key-features-PSBDescription,
+  .key-features-marketplaceDescription,
+  .key-features-businessDescription,
+  .key-features-tutorsChatDescription,
+  .key-features-text-tutorResources,
+  .key-features-marketplaceDescription,
+  .key-features-text60,
+  .key-features-text72 {
+    color: rgba(11, 84, 158, 1);
+    height: auto;
+    align-self: stretch;
+    text-align: center;
+    line-height: 150%;
+  }
+  
+  /* Key features, first row */
+  .key-features-allFeatures {
+    gap: 80px;
+    width: 1440px;
+    height: 415px;
+    display: flex;
+    padding: 112px 64px;
+    overflow: hidden;
+    align-items: center;
+    flex-shrink: 0;
+    flex-direction: column;
+    background-color: var(--dl-color-default-white);
+  }
+  
+  .key-features-row,
+  .key-features-row1,
+  .key-features-row2 {
+    gap: 48px;
+    display: flex;
+    align-self: stretch;
+    align-items: flex-start;
+    flex-shrink: 0;
+    justify-content: center;
+  }
+  
+  .key-features-column01,
+  .key-features-column02,
+  .key-features-column03,
+  .key-features-column06,
+  .key-features-column07,
+  .key-features-column08 {
+    gap: 24px;
+    width: 405px;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  
+  .key-features-content1,
+  .key-features-content2,
+  .key-features-content3,
+  .key-features-content4,
+  .key-features-content5,
+  .key-features-content6 {
+    gap: 24px;
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    flex-direction: column;
+  }
+  .key-features-descrwiption {
+    font-style: normal;
+    font-size: 12px; 
+  }
+
