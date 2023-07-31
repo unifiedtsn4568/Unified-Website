@@ -539,6 +539,30 @@ label {
     transform: scale(1.1);
 }
 
+/* Privacy policy and terms of use styles */
+.privacyPolicy {
+    margin: 20px;
+    padding: 20px;
+}
+
+.privacyPolicy section {
+    margin-bottom: 30px;
+    color: #0B549E;
+}
+
+.privacyPolicy a {
+    color: #0B549E;
+}
+
+.privacyPolicy section h1 {
+    margin-bottom: 10px;
+    font-size: 30pt;
+}
+
+.privacyPolicy section h2 {
+    margin-bottom: 10px;
+}
+
 /* About us page styles */
 .banner {
   position: relative;
