@@ -517,6 +517,7 @@ label {
 .still-have-questions {
     text-align: center;
     margin-top: 50px;
+    padding: 20px;
 }
 
 .section-heading {
@@ -850,6 +851,26 @@ label {
 }
 
 
+/* Advertisment page styles */
+.advertisement-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advertisement-heading {
+    max-width: 50%;
+    margin: 20px;
+    padding: 20px;
+    font-size: 36pt;
+}
+
+.advertisement-image {
+    max-width: 50%;
+    padding: 40px;
+    margin-left: auto;
+}
+
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
@@ -1011,6 +1032,23 @@ label {
 
     .user-section img {
         margin-bottom: 20px;
+    }
+
+    .advertisement-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .advertisement-heading {
+        font-size: large;
+    }
+
+    .advertisement-heading, .advertisement-image {
+        max-width: 100%;
+    }
+
+    .advertisement-image {
+        margin-top: 20px;
     }
 }
 
