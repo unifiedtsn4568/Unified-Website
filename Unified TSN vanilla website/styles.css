@@ -316,6 +316,16 @@ label {
     font-size: 2.2em;
 }
 
+.gifs-row {
+    display: flex;
+    justify-content: center;
+}
+
+.gifs-row img {
+    max-width: 200px;
+    margin: 10px;
+}
+
 .carousel-container {
   max-width: 1200px;
   margin: 90px auto;
@@ -884,30 +894,33 @@ label {
         /* Show the menu icon */
     }
 
-    #menu-toggle:checked+.menu-icon span {
-        background-color: #fff;
-        /* Change line color when the menu icon is checked */
-    }
-
-    #menu-toggle:checked+.menu-icon+.links {
+    /* Adjust the top property to bring the links further down */
+    #menu-toggle:checked + .menu-icon + .links {
         display: flex;
         /* Show the links when the menu icon is checked */
         flex-direction: column;
         background-color: #C1D9F8;
         padding: 10px;
         position: absolute;
-        top: 0;
+        padding: 90px 0;
+        top: 60px; /* Adjust the top position to bring the links further down */
         left: 0;
         right: 0;
         bottom: 0;
         justify-content: center;
         align-items: center;
         z-index: 9999;
+        opacity: 1;
+        /* Add a transition for smooth sliding effect */
+        transition: opacity 0.3s ease;
     }
 
-    #menu-toggle:checked+.menu-icon+.links.show {
+    /* Adjust the top property to bring the links further down when unchecked */
+    #menu-toggle:checked + .menu-icon + .links {
+        top: 60px; /* Adjust the top position to align with the bottom of the navbar */
         opacity: 1;
-        transform: scale(1);
+        /* Add a transition for smooth sliding effect */
+        transition: opacity 0.3s ease;
     }
 
     .footer-left {
@@ -988,6 +1001,15 @@ label {
 
     .keywords-bar {
         width: 300px;
+    }
+
+    .gifs-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gifs-row img {
+        margin: 10px 0;
     }
 
     .content-section {
