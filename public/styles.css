@@ -1155,7 +1155,7 @@ label {
     height: 415px;
     display: flex;
     padding: 112px 64px;
-    overflow: auto !important;
+    overflow: hidden;
     align-items: center;
     flex-shrink: 0;
     flex-direction: column;
