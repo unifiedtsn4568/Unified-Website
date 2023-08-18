@@ -1225,6 +1225,7 @@ label {
     .key-features-column08 {
       width: auto;
     }
+    
     .key-features-SWDescription,
     .key-features-PSBDescription,
     .key-features-marketplaceDescription,
@@ -1233,11 +1234,13 @@ label {
     .key-features-text-tutorResources,
     .key-features-marketplaceDescription,
     .key-features-text60,
-    .key-features-text72 {
+    .key-features-text72,
+    .key-features-description {
       white-space: normal;
       white-space: pre-line;
       font-size: 0.875rem; /* Adjust font size for smaller screens */
     }
+    
 
   }
     
