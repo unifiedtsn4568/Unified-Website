@@ -1151,8 +1151,7 @@ label {
   /* Key features, first row */
   .key-features-allFeatures {
     gap: 80px;
-    width: 1440px;
-    height: 415px;
+    width: 100%;
     display: flex;
     padding: 112px 64px;
     overflow: hidden;
@@ -1206,16 +1205,16 @@ label {
     .key-features-allFeatures {
       flex-direction: column;
       align-items: centre;
-      flex-wrap: wrap;
     }
   
     .key-features-row,
     .key-features-row1,
     .key-features-row2 {
-      gap: 25px;
+      
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      flex-wrap: wrap;
     }
     
     .key-features-column01,
@@ -1226,7 +1225,6 @@ label {
     .key-features-column08 {
       width: auto;
     }
-    .key-features-description,
     .key-features-SWDescription,
     .key-features-PSBDescription,
     .key-features-marketplaceDescription,
@@ -1237,7 +1235,6 @@ label {
     .key-features-text60,
     .key-features-text72 {
       white-space: normal;
-      flex-wrap: wrap;
       white-space: pre-line;
       font-size: 0.875rem; /* Adjust font size for smaller screens */
     }
