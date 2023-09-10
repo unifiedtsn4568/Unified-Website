@@ -102,6 +102,7 @@ label {
 }
 
 .footer-left {
+    display: none;
     flex: 1;
     margin-right: 300px;
 }
